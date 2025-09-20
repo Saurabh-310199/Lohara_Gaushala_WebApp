@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GiveHope &mdash; Website Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    /* Popup box */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup h2 {
+      margin: 0 0 10px;
+      color: #4CAF50;
+    }
+
+    .popup button {
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .popup button.close {
+      background: #f44336;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-lang-en="Shree Ujwal Gaurakshan, Lohara"
+        data-lang-mr="श्री उज्ज्वल गौरक्षण संस्था केन्द्र, लोहारा"
+        data-lang-hi="श्री उज्ज्वल गौरक्षण संस्था केन्द्र, लोहारा">Shree Ujwal Gaurakshan, Lohara</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link" data-lang-en="Home" data-lang-mr="मुख्यपृष्ठ"
+              data-lang-hi="होम">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="how-it-works.html" class="nav-link" data-lang-en="Works" data-lang-mr="कार्य"
+              data-lang-hi="काम">Works</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="donate.html" class="nav-link" data-lang-en="Donate" data-lang-mr="देणगी द्या"
+              data-lang-hi="दान करें">Donate</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link" data-lang-en="Gallery" data-lang-mr="गॅलरी"
+              data-lang-hi="गैलरी">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" data-lang-en="About" data-lang-mr="आमच्याबद्दल"
+              data-lang-hi="हमारे बारे में">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" data-lang-en="Contact" data-lang-mr="संपर्क"
+              data-lang-hi="संपर्क करें">Contact</a>
+          </li>
+
+
+        </ul>
+      </div>
+      <!-- Language Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          🌐 Language
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+          <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+          <a class="dropdown-item" href="#" onclick="setLanguage('mr')">मराठी</a>
+          <a class="dropdown-item" href="#" onclick="setLanguage('hi')">हिन्दी</a>
+        </div>
+      </li>
+    </div>
+  </nav>
+
+  <!-- END nav -->
+
+  <div class="block-31" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 block-30-sm item" style="background-image: url('images/bg_1.png');"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-7">
+              <h2 class="heading mb-5" data-lang-en="Welcome to Gaushala Lohara"
+                data-lang-mr="लोहारा गौशाळेत आपले स्वागत आहे" data-lang-hi="लोहारा गौशाला में आपका स्वागत है">
+                Welcome to Gaushala Lohara
+              </h2>
+              <p style="display: inline-block;"><a href="images/gaushalavideo.mp4" data-fancybox
+                  class="ftco-play-video d-flex"><span class="play-icon-wrap align-self-center mr-4"><span
+                      class="ion-ios-play"></span></span> <span class="align-self-center">Watch Video</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site-section section-counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pr-5">
+          <div class="block-48">
+
+            <!-- Served Over -->
+            <span class="block-48-text-1" data-lang-en="Served Over" data-lang-mr="सेवा केलेल्या"
+              data-lang-hi="सेवा की गई">
+              Served Over
+            </span>
+
+            <!-- Counter -->
+            <div class="block-48-counter ftco-number" data-number="769">0</div>
+
+            <!-- Cows text -->
+            <span class="block-48-text-1 mb-4 d-block" data-lang-en="Cows are from whole Country"
+              data-lang-mr="गायी संपूर्ण देशभरातून आहेत" data-lang-hi="गायें पूरे देश से हैं">
+              Cows are from whole Country
+            </span>
+
+            <!-- Button -->
+            <p class="mb-0">
+              <a href="donate.html" class="btn btn-white px-3 py-2" data-lang-en="View Our Program"
+                data-lang-mr="आमचा कार्यक्रम पहा" data-lang-hi="हमारा कार्यक्रम देखें">
+                View Our Program
+              </a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 welcome-text">
+          <h2 class="display-4 mb-3" data-lang-en="Who Are We?" data-lang-mr="आपण कोण आहोत?" data-lang-hi="हम कौन हैं?">
+            Who Are We?</h2>
+          <p class="lead" data-lang-en="Lohara Gaushala is a humble shelter dedicated to the protection and care of cows. Our mission
+            is to provide food, medical support, and a safe environment for abandoned, injured, and needy cows. With the
+            blessings of our community and the generous support of donors, we continue to serve the holy cows
+            with love and devotion."
+            data-lang-mr="लोहारा गौशाळा ही गाईंच्या संरक्षणासाठी आणि सेवेसाठी उभारलेली एक साधी परंतु पवित्र जागा आहे. आमचे ध्येय म्हणजे सोडून दिलेल्या, जखमी आणि गरजू गाईंसाठी अन्न, वैद्यकीय मदत आणि सुरक्षित वातावरण उपलब्ध करून देणे. स्थानिक समाजाचे आशीर्वाद आणि दात्यांच्या उदार सहाय्याने आम्ही गाईंची सेवा प्रेमाने आणि भक्तीभावाने करत आहोत."
+            data-lang-hi="लोहारा गौशाला एक विनम्र आश्रय है जो गायों की सुरक्षा और सेवा के लिए समर्पित है। हमारा उद्देश्य है कि परित्यक्त, घायल और ज़रूरतमंद गायों को भोजन, चिकित्सकीय सहायता और सुरक्षित वातावरण प्रदान किया जाए। समाज के आशीर्वाद और दानदाताओं के सहयोग से हम गौमाता की सेवा प्रेम और भक्ति से कर रहे हैं।">
+            Lohara Gaushala is a humble shelter dedicated to the protection and care of cows. Our mission
+            is to provide food, medical support, and a safe environment for abandoned, injured, and needy cows. With the
+            blessings of our community and the generous support of donors, we continue to serve the holy cows
+            with love and devotion.</p>
+          <p class="mb-4" data-lang-en="Our vision is to preserve Indian tradition, protect Gau Mata, and inspire people to
+            join this noble cause."
+            data-lang-mr="आमची दृष्टी म्हणजे भारतीय परंपरा जपणे, गौमातेचे संरक्षण करणे आणि लोकांना या पवित्र कार्यात सामील होण्यासाठी प्रेरित करणे."
+            data-lang-hi="हमारा संकल्प है कि भारतीय परंपरा को संजोएं, गौमाता की रक्षा करें और लोगों को इस पवित्र कार्य में शामिल होने के लिए प्रेरित करें।">
+            Our vision is to preserve Indian tradition, protect Gau Mata, and inspire people to
+            join this noble cause.
+          </p>
+          <p class="mb-0"><a href="#" class="btn btn-primary px-3 py-2">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section border-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-bulb"></span></div>
+            <div class="media-body">
+              <h3 class="heading" data-lang-en="Our Mission" data-lang-mr="आमचे ध्येय" data-lang-hi="हमारा संकल्प">Our
+                Mission</h3>
+              <p data-lang-en="Our mission is to protect and serve cows with love and compassion. We aim to provide food, shelter, and
+                medical care to every cow in need and preserve the cultural values of cow protection."
+                data-lang-mr="गायींचे संरक्षण आणि सेवा हेच आमचे ध्येय आहे. आम्ही प्रत्येक गरजू गायीला अन्न, निवारा आणि वैद्यकीय मदत देण्याचा प्रयत्न करतो तसेच गोरक्षणाची परंपरा जपतो."
+                data-lang-hi="हमारा उद्देश्य गायों की रक्षा और सेवा करना है। हम हर ज़रूरतमंद गाय को भोजन, आश्रय और चिकित्सा सुविधा उपलब्ध कराने के साथ-साथ गो-रक्षा की परंपरा को बनाए रखना चाहते हैं।">
+                Our mission is to protect and serve cows with love and compassion. We aim to provide food, shelter, and
+                medical care to every cow in need and preserve the cultural values of cow protection.</p>
+              <p><a href="#" class="link-underline" data-lang-en="Learn More" data-lang-mr="अधिक जाणून घ्या"
+                  data-lang-hi="और जानें">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-cash"></span></div>
+            <div class="media-body">
+              <h3 class="heading" data-lang-en="Make Donations" data-lang-mr="देणगी द्या" data-lang-hi="दान करें">Make
+                Donations</h3>
+              <p data-lang-en="Your generous donation helps us feed the cows, arrange medicines, and improve shelter facilities. Every
+                small contribution makes a big difference in the lives of these sacred beings."
+                data-lang-mr="आपली देणगी आम्हाला गायींना अन्न, औषधे आणि चांगल्या निवाऱ्याची सोय उपलब्ध करून देण्यास मदत करते. छोटासा वाटा देखील त्यांच्या जीवनात मोठा फरक घडवतो."
+                data-lang-hi="आपका दान हमें गायों को भोजन, दवाइयाँ और बेहतर आश्रय उपलब्ध कराने में मदद करता है। आपका छोटा सा योगदान भी उनके जीवन में बड़ा बदलाव ला सकता है।">
+                Your generous donation helps us feed the cows, arrange medicines, and improve shelter facilities. Every
+                small contribution makes a big difference in the lives of these sacred beings.</p>
+              <p><a href="#" class="link-underline" data-lang-en="Learn More" data-lang-mr="अधिक जाणून घ्या"
+                  data-lang-hi="और जानें">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-contacts"></span></div>
+            <div class="media-body">
+              <h3 class="heading" data-lang-en="We Need Volunteers" data-lang-mr="आम्हाला स्वयंसेवक हवे आहेत"
+                data-lang-hi="हमें स्वयंसेवक चाहिए">We Need Volunteers</h3>
+              <p data-lang-en="We welcome volunteers who can dedicate their time and efforts to serve the cows. Join us in feeding,
+                caring, and spreading awareness about the importance of cow protection."
+                data-lang-mr="गायींच्या सेवेसाठी वेळ आणि प्रयत्न देऊ शकतील असे स्वयंसेवक आम्हाला हवे आहेत. अन्नदान, सेवा आणि गोरक्षणाची जाणीव पसरवण्यासाठी आमच्यात सामील व्हा."
+                data-lang-hi="हमें ऐसे स्वयंसेवक चाहिए जो अपना समय और प्रयास गायों की सेवा में दे सकें। हमारे साथ जुड़ें – भोजन, सेवा और गो-रक्षा की जागरूकता फैलाने के लिए।">
+                We welcome volunteers who can dedicate their time and efforts to serve the cows. Join us in feeding,
+                caring, and spreading awareness about the importance of cow protection.</p>
+              <p><a href="#" class="link-underline" data-lang-en="Learn More" data-lang-mr="अधिक जाणून घ्या"
+                  data-lang-hi="और जानें">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- .site-section -->
+
+
+
+
+
+  <div class="site-section fund-raisers bg-light">
+    <div class="container">
+      <div class="row mb-3 justify-content-center">
+        <div class="col-md-10 text-center">
+          <h2 data-lang-en="Latest Fundraisers" data-lang-mr="नवीनतम निधी संकलन" data-lang-hi="नवीनतम धन संग्रह">Latest
+            Fundraisers</h2>
+          <p class="lead"
+            data-lang-en="Our latest fundraising campaigns are dedicated to feeding cows, arranging medical treatment for injured and sick cows, and improving shelter facilities. Every donation, big or small, directly helps us protect and serve our holy cows. Join hands with us in this noble cause and make a difference."
+            data-lang-mr="आमच्या नवीन निधी संकलन मोहिमा गायींसाठी अन्नदान, जखमी आणि आजारी गायींच्या उपचारांची व्यवस्था आणि निवाऱ्याच्या सोयी सुधारण्यासाठी समर्पित आहेत. लहान असो वा मोठी, प्रत्येक देणगी आम्हाला गौमातेचे संरक्षण आणि सेवा करण्यात थेट मदत करते. या पवित्र कार्यात आमच्यासोबत हातमिळवणी करा आणि बदल घडवा."
+            data-lang-hi="हमारे नवीनतम धन संग्रह अभियान गायों के लिए भोजन उपलब्ध कराने, बीमार और घायल गायों के उपचार की व्यवस्था करने और आश्रय सुविधाओं को बेहतर बनाने के लिए समर्पित हैं। छोटा हो या बड़ा, हर दान हमें गौमाता की रक्षा और सेवा में सीधा सहयोग करता है। इस पवित्र कार्य में हमारे साथ जुड़ें और बदलाव लाएँ।">
+            Our latest fundraising campaigns are
+            dedicated to feeding cows, arranging medical treatment for injured and sick cows, and improving shelter
+            facilities. Every donation, big or small, directly helps us protect and serve our holy cows. Join hands with
+            us in this noble cause and make a difference.
+          </p>
+          <p><a href="#" class="link-underline" data-lang-en="Learn More" data-lang-mr="अधिक जाणून घ्या"
+              data-lang-hi="और जानें">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div> <!-- .section -->
+
+
+  
+
+  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_3.jpg');">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <img src="images/bg_3.jpg" alt="Image placeholder" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 pl-md-5">
+          <span>
+            <h2 class="featured-text d-block mb-3" data-lang-en="Success Stories" data-lang-mr="यशोगाथा"
+              data-lang-hi="सफलता की कहानियाँ">Success
+              Stories</h2>
+          </span>
+          <p class="mb-3" data-lang-en="With the blessings of donors and supporters, Lohara Gaushala has been able to rescue abandoned
+            cows, provide life-saving medical treatments, and arrange regular food supplies. Each contribution has
+            created a positive impact and brought happiness to our holy cows. These stories of change inspire us to
+            continue our mission with greater devotion."
+            data-lang-mr="दाते आणि समर्थकांच्या आशीर्वादामुळे लोहारा गौशाळेला सोडून दिलेल्या गायींना वाचवणे, जीव वाचवणारे उपचार करणे आणि नियमित अन्नपुरवठा करणे शक्य झाले आहे. प्रत्येक देणगीने सकारात्मक बदल घडवला आणि आमच्या गौमातांना आनंद दिला. या यशोगाथा आम्हाला अधिक भक्तीभावाने आमचे ध्येय पुढे नेण्यासाठी प्रेरणा देतात."
+            data-lang-hi="दानदाताओं और समर्थकों के आशीर्वाद से लोहारा गौशाला ने परित्यक्त गायों को बचाया, जीवन रक्षक उपचार उपलब्ध कराए और नियमित भोजन की व्यवस्था की है। प्रत्येक योगदान ने एक सकारात्मक बदलाव लाया और हमारी गौमाता के जीवन में खुशी भर दी। ये सफलता की कहानियाँ हमें और अधिक समर्पण के साथ अपना मिशन जारी रखने की प्रेरणा देती हैं।">
+            With the blessings of donors and supporters, Lohara Gaushala has been able to rescue abandoned
+            cows, provide life-saving medical treatments, and arrange regular food supplies. Each contribution has
+            created a positive impact and brought happiness to our holy cows. These stories of change inspire us to
+            continue our mission with greater devotion.</p>
+
+
+          <p><a href="#" class="btn btn-success btn-hover-white py-3 px-5" data-lang-en="Make Donations"
+              data-lang-mr="देणगी द्या" data-lang-hi="दान करें">Make
+              Donations</a></p>
+        </div>
+
+      </div>
+    </div>
+
+  </div> <!-- .featured-donate -->
+
+  <div class="site-section bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <h2>Latest News</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="images/img_4.jpg" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">Be A Volunteer Today</a></h3>
+            <span class="date mb-4 d-block text-muted">July 26, 2018</span>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            <p><a href="#" class="link-underline">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="images/img_5.jpg" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">You May Save The Life of A Child</a></h3>
+            <span class="date mb-4 d-block text-muted">July 26, 2018</span>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            <p><a href="#" class="link-underline">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="images/img_6.jpg" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">Children That Needs Care</a></h3>
+            <span class="date mb-4 d-block text-muted">July 26, 2018</span>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            <p><a href="#" class="link-underline">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .section -->
+
+  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_2.jpg');">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 mb-5 mb-md-0">
+          <img src="images/bg_2.jpg" alt="Image placeholder" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 pl-md-5">
+
+          <div class="form-volunteer">
+            <h2 data-lang-en="Be A Volunteer Today" data-lang-mr="आजच स्वयंसेवक बना"
+              data-lang-hi="आज ही स्वयंसेवक बनें">Be A Volunteer Today</h2>
+
+            <form action="https://formspree.io/f/yourFormID" method="POST">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control py-2" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="phone" class="form-control py-2" placeholder="Enter your phone" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" cols="30" rows="3" class="form-control py-2" placeholder="Write your address"
+                  required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-white px-5 py-2" value="Send">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div> <!-- .featured-donate -->
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <button class="close" onclick="closePopup()">Close</button>
+      <br>
+
+      <!-- Heading -->
+      <h2 data-lang-en="🙏 Support Our Gaushala 🙏" data-lang-mr="🙏 आमच्या गोशाळेला मदत करा 🙏"
+        data-lang-hi="🙏 हमारे गौशाला का समर्थन करें 🙏">
+        🙏 Support Our Gaushala 🙏
+      </h2>
+
+      <!-- Paragraph -->
+      <p data-lang-en="Your small donation helps us take care of cows with love ❤️"
+        data-lang-mr="तुमचा छोटासा देणगी आमच्या गायींची काळजी प्रेमाने घेण्यास मदत करतो ❤️"
+        data-lang-hi="आपका छोटा दान हमें गायों की देखभाल प्रेम से करने में मदद करता है ❤️">
+        Your small donation helps us take care of cows with love ❤️
+      </p>
+
+      <!-- Donate Button -->
+      <button data-lang-en="Donate Now" data-lang-mr="आता देणगी द्या" data-lang-hi="अभी दान करें"
+        onclick="window.location.href='donate.html'">
+        Donate Now
+      </button>
+
+    </div>
+  </div>
+
+
+  <footer class="footer bg-dark text-light pt-5">
+    <div class="container mb-md-0">
+      <div class="row justify-content-between">
+
+        <!-- Left Column: About Us -->
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section" data-lang-en="About Us" data-lang-mr="संस्थेबद्दल"
+            data-lang-hi="संस्था के बारे में">About Us</h3>
+          <p class="lead"
+            data-lang-en="Lohara Gaushala has a long-standing tradition of love and respect for cows. Founded with the blessings of villagers and social workers, the Gaushala began as a small shelter for a few abandoned cows."
+            data-lang-mr="लोहरा गोशाळेचा प्रवास हा गायींबद्दलची करुणा आणि आदर या परंपरेतून सुरू झाला. गावकऱ्यांच्या आणि समाजसेवकांच्या आशीर्वादाने, काही सोडून दिलेल्या गायींसाठी लहान आश्रयस्थान म्हणून ही गोशाळा स्थापन झाली."
+            data-lang-hi="लोहरा गौशाला का इतिहास गायों के प्रति करुणा और सम्मान की परंपरा से जुड़ा हुआ है। गाँववासियों और समाजसेवियों के सहयोग से यह गौशाला कुछ बेसहारा गायों के लिए एक छोटे से आश्रय के रूप में शुरू हुई थी।">
+            Lohara Gaushala has a long-standing tradition of love and respect for cows.
+            Founded with the blessings of villagers and social workers, the Gaushala began as a small shelter for a few
+            abandoned cows.
+          </p>
+          <p class="mb-5"
+            data-lang-en="Over the years, it has grown into a well-managed organization, providing food, clean water, medical treatment, and a natural living environment for hundreds of cows."
+            data-lang-mr="कालांतराने ही संस्था मोठी होत गेली आणि शेकडो गायींना अन्न, शुद्ध पाणी, वैद्यकीय सेवा आणि नैसर्गिक वातावरण मिळू लागले."
+            data-lang-hi="समय के साथ यह संस्था विकसित होकर सैकड़ों गायों को भोजन, स्वच्छ जल, चिकित्सा सुविधा और प्राकृतिक वातावरण प्रदान करने लगी।">
+            Over the years, it has grown into a well-managed organization, providing food, clean water, medical
+            treatment, and a natural living environment for hundreds of cows.
+          </p>
+        </div>
+
+        <!-- Right Column: Get Connected -->
+        <div class="col-md-6 col-lg-4">
+          <div class="block-23">
+            <h3 class="heading-section" data-lang-en="Get In Touch" data-lang-mr="संपर्क करा"
+              data-lang-hi="संपर्क करें">Get In Touch</h3>
+            <ul class="list-unstyled">
+              <!-- Address -->
+              <li>
+                <span class="icon icon-map-marker"></span>
+                <span class="text" data-lang-en="Lohara, Maharashtra 442402, India"
+                  data-lang-mr="लोहरा, महाराष्ट्र 442402, भारत" data-lang-hi="लोहरा, महाराष्ट्र 442402, भारत">
+                  Lohara, Maharashtra 442402, India
+                </span>
+              </li>
+
+              <!-- Phone -->
+              <li>
+                <a href="tel:+918530426830">
+                  <span class="icon icon-phone"></span>
+                  <span class="text" data-lang-en="Call us: +91 8530426830"
+                    data-lang-mr="आमच्याशी संपर्क करा: +91 8530426830" data-lang-hi="संपर्क करें: +91 8530426830">
+                    Call us: +91 8530426830
+                  </span>
+                </a>
+              </li>
+
+              <!-- Email -->
+              <li>
+                <a href="mailto:vaibhavyesankar96@gmail.com">
+                  <span class="icon icon-envelope"></span>
+                  <span class="text" data-lang-en="Email: vaibhavyesankar96@gmail.com"
+                    data-lang-mr="ईमेल: vaibhavyesankar96@gmail.com" data-lang-hi="ईमेल: vaibhavyesankar96@gmail.com">
+                    Email: vaibhavyesankar96@gmail.com
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row pt-2">
+        <div class="col-md-12 text-center mb-0">
+          <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Made with
+            <i class="ion-ios-heart text-danger"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-lang-en]").forEach(el => {
+        el.textContent = el.getAttribute(`data-lang-${lang}`);
+      });
+    }
+    // default English
+    setLanguage('en');
+  </script>
+
+  <script>
+    // Show popup after 3 seconds
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById("popupOverlay").style.display = "block";
+      }, 3000);
+    };
+
+    // Close popup
+    function closePopup() {
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
